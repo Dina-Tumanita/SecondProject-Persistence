@@ -9,7 +9,7 @@ import statistics.TypeGame;
 import utils.Terminal;
 
 public class Hangman extends Game{ 
-
+    
     private WordHG myWord;
     private IGuesserable playerGuesser; 
     private IGiverable playerGiver; 

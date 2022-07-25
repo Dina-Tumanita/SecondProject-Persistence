@@ -7,9 +7,9 @@ public class BoardHangMan {
 
     public final int BODY_SEGMENTS = 6;    
     public int hangmanParts; //attempts
+    private Hangman game;
     public String[] hangedMan = new String[BODY_SEGMENTS]; 
     public boolean winCondition;
-
 
     public void setWinCondition(boolean winCondition) {
         this.winCondition = winCondition;
@@ -18,8 +18,7 @@ public class BoardHangMan {
     public void setHangmanParts(int hangmanParts) {
         this.hangmanParts = hangmanParts;
     }
-
-
+    
     public void cleanBoard(){
         this.winCondition = false;
         this.hangmanParts = 8; 
@@ -77,6 +76,22 @@ public class BoardHangMan {
             default:
             break;
         }
+    }
+
+    public int getBODY_SEGMENTS() {
+        return BODY_SEGMENTS;
+    }
+
+    public int getHangmanParts() {
+        return hangmanParts;
+    }
+
+    public String[] getHangedMan() {
+        return hangedMan;
+    }
+
+    public boolean isWinCondition() {
+        return winCondition;
     }
 
 
