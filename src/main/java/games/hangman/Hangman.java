@@ -13,8 +13,8 @@ public class Hangman extends Game{
     private WordHG myWord;
     private IGuesserable playerGuesser; 
     private IGiverable playerGiver; 
-    private IPlayerGeneral player1; 
-    private IPlayerGeneral player2; 
+    public IPlayerGeneral player1; 
+    public IPlayerGeneral player2; 
     private BoardHangMan board;
 
     private int remainingAttempts; 
@@ -72,7 +72,7 @@ public class Hangman extends Game{
         choose1stPlayer();
     }  
 
-    private void setPlayers(){ 
+    public void setPlayers(){ 
         Terminal.showMessage("Randomly choosing First Player"); 
         player1 = this.players.get(0); 
         player2 = this.players.get(1);  
