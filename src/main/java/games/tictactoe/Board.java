@@ -56,7 +56,7 @@ public class Board {
             myBoard[posX][posY].setMyValue(value);
         } else {
             Terminal.showMessage("Invalid move");
-            if(this.game.getContMovements() < 8) return false;
+            if(this.game.getContMovements() < 9) return false;
         }
         return true;
     }

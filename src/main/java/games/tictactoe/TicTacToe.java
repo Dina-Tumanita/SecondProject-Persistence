@@ -26,7 +26,7 @@ public class    TicTacToe extends Game {
 
     public TicTacToe(){}
 
-    private SquareValue giveCoin(int index){
+    public SquareValue giveCoin(int index){
         if(index % 2 == 0) return SquareValue.X;
         else return SquareValue.O;
     }
@@ -56,8 +56,9 @@ public class    TicTacToe extends Game {
             turn();
             if(indexPlayer == this.players.size()-1) indexPlayer = 0;
             else indexPlayer++;
+            board.printBoard();
+            Terminal.pressEnter();
         } while(!gameOver);
-        Terminal.pressEnter();
     }
 
     public void turn(){
@@ -74,8 +75,6 @@ public class    TicTacToe extends Game {
             default:
                 break;
         }
-        board.printBoard();
-        Terminal.pressEnter();
     }
 
     public void executeTurn(IPlayerGeneral actualPlayer){

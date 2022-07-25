@@ -1,0 +1,17 @@
+@startuml
+start
+
+:select player1;
+:select player2;
+:spin DicesPlayer1;
+:spin DicesPlayer2;
+:choose priority;
+:select word;
+repeat
+	:guess word;
+    :contErrores++;
+repeat while(guessedWord && contErrores < 8) is (no)
+:show results;
+
+stop
+@enduml

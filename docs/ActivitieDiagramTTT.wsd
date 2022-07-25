@@ -1,0 +1,16 @@
+@startuml
+start
+
+:select player1;
+:select player2;
+:choose priority;
+repeat
+	:put X;
+    :put O;
+    :contMovements++;
+repeat while(isTicTacToe && contMovements < 9) is (no)
+:show results;
+
+
+stop
+@enduml
