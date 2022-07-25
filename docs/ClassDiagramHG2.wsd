@@ -1,0 +1,107 @@
+@startuml ClassTicTacToe
+
+
+package games {
+
+    interface GamePlayersProvider {
+        + getIPlayersGeneralList(int amountPlayers):ArrayList<IPlayerGeneral>
+    }
+
+abstract Game {
+    - ArrayList<IPlayerGeneral> players
+    + {abstract}selectPlayer(GamePlayersProvider listProviders):void
+    + {abstract}go():void
+    + {abstract}turn():void
+}
+
+interface IPlayerGeneral{
+    + saveGameResults(TypeGame type, StatisticValue value):void
+}
+
+package hangman {
+
+    class Hangman{
+        - int remainingAttempts
+        - int guessingAttempts
+        - Board board
+        - WordHG word
+        - IGiverable wordGiver
+        - IGuesserable wordGuesser
+    }
+
+    class Board {
+        + int guessingAttempts
+        + String[6] hangedMan
+        + void cleanBoard()
+        + void printHangman()
+        + void editHangman()
+
+    }
+
+    class WordHG{
+        + String originalWord
+        + String hiddenWord
+        + String guessingLetter
+        + void createGuessWord()
+        + boolean checkWin()
+        + void printMissingLetters()
+        + boolean checkLetter()
+        - void placeLetters()
+        - int getExistingPosition()
+    }
+
+    interface IHangmanPlayer{}
+
+    interface IGiverable{
+        + selectWord()
+    }
+
+    interface IGuesserable{
+        + guessWord()
+        + tryLetter()
+        + askForAHint()
+    }
+
+}
+
+}
+
+package model {
+
+    package players {
+
+        class Player {
+            String name
+        }
+        
+        class ListPlayers{
+            Player[] getPlayers()
+        }
+
+    }
+
+}
+
+Player ..|> IPlayerGeneral
+
+Hangman *--> Board
+Hangman *--> WordHG
+
+Game ..> GamePlayersProvider
+
+IPlayerGeneral ..|> IHangmanPlayer
+IHangmanPlayer ..|> IGiverable
+IHangmanPlayer ..|> IGuesserable
+
+ListPlayers ..|> GamePlayersProvider
+
+Game *-- IPlayerGeneral
+
+Hangman *--> IGiverable
+Hangman *--> IGuesserable
+
+Hangman -up-|> Game
+
+
+
+@enduml

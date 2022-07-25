@@ -1,0 +1,87 @@
+@startuml ClassTicTacToe
+
+
+package games {
+
+    interface GamePlayersProvider {
+        +getIPlayersGeneralList(int amountPlayers):ArrayList<IPlayerGeneral>
+    }
+
+abstract Game {
+    -ArrayList<IPlayerGeneral> players
+    +{abstract}selectPlayer(GamePlayersProvider listProviders):void
+    +{abstract}go():void
+    +{abstract}turn(IPlayerGeneral player):void
+}
+
+interface IPlayerGeneral{
+    +saveGameResults(Statistic result):void
+}
+
+
+package tictactoe {
+
+    interface TictactoePlayer{
+        +returnPosition():void()
+    }
+
+    class TicTacToe{
+        -Board board
+    }
+
+    class Board {
+        -Square[][] board
+        +printBoard():void
+        +isTicTacToe():void
+        +isEmptySpaces():void
+    }
+
+    class Square {}
+
+    object X
+    object O
+    object EMPTY
+
+}
+
+}
+
+package model {
+
+    package players {
+
+        class Player {
+            String name
+        }
+        
+        class ListPlayers{
+            Player[] getPlayers()
+        }
+
+    }
+
+}
+
+Player ..|> IPlayerGeneral
+
+
+IPlayerGeneral ..|> TictactoePlayer
+Board *--> "3*3" Square
+
+Game *-- IPlayerGeneral
+
+Game ..> GamePlayersProvider
+ListPlayers ..|> GamePlayersProvider
+
+
+TicTacToe -up-|> Game
+
+TicTacToe *--> Board
+TicTacToe ..> TictactoePlayer
+
+Square *--> X
+Square *--> O
+Square *--> EMPTY
+
+
+@enduml

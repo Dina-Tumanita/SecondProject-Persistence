@@ -1,0 +1,136 @@
+@startuml ClassHangman
+
+class Program {
+    +start():void
+}
+
+class Menu {
+    -ArrayList<IPlayerGeneral> listPlayers
+    +showMenuPrincipal():void
+}
+
+interface IPlayerGeneral{
+    +saveGameResult():void
+}
+
+package utils {
+
+    class Terminal {
+        +askNumber():int
+        +askString():String
+        +showMessage():void
+    }
+
+}
+
+package controller {
+
+    class ControllerPlayer{
+        +create():void
+        +read():void
+        +update():void
+        +delete():void
+        +getOne():void
+        +showPlayers():void
+    }
+
+}
+
+package model {
+
+    package players {
+
+        class Player {
+            -String name
+            -StatisticsPlayer statistics
+        }
+
+        class Bot {
+
+        }
+
+        class Human {
+
+        }
+
+    }
+
+}
+
+package games {
+
+    class Game{
+        +selectPlayers():void
+        +{abstract}go():void
+        +{abstract}turn():void
+    }
+
+    package tictactoe{
+
+        class TicTacToe{
+        }
+
+    }
+
+    package hangman {
+
+        class Hangman{
+        }
+
+    }
+
+}
+
+package statistics {
+
+    class StatisticsPlayer {
+        -ArrayList<Statistic> listStatistics
+    }
+
+    class Statistic {
+        -TypeGame type
+        -StatisticValue value
+    }
+
+    enum TypeGame {}
+    object HANGMAN
+    object TICTACTOE
+
+    enum StatisticValue {}
+    object DRAW
+    object LOSE
+    object WIN
+
+}
+
+
+
+Program *--> Menu
+
+Menu *--> Terminal
+Menu *--> ControllerPlayer
+Menu *--> Game
+Menu *--> IPlayerGeneral
+
+Hangman -up-|> Game
+TicTacToe -up-|> Game 
+
+Player *--> StatisticsPlayer
+StatisticsPlayer *--> "0..*" Statistic
+
+Bot -up-|> Player
+Human -up-|> Player
+
+Player ..|> IPlayerGeneral
+
+Statistic *-- TypeGame
+TypeGame *-- HANGMAN 
+TypeGame *-- TICTACTOE
+
+Statistic *-- StatisticValue
+StatisticValue *-- DRAW
+StatisticValue *-- LOSE 
+StatisticValue *-- WIN
+
+
+@enduml

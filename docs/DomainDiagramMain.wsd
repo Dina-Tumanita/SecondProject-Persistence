@@ -1,0 +1,44 @@
+@startuml VocabularyMain
+
+object Games 
+
+object Game
+object TicTacToe
+object HangMan
+object Execute
+object Resume
+object Introduction
+object NumberOfPlayers
+object CRUD
+object ListOfPlayers
+object TypeGame
+object Statistics
+object AssignRoles
+object TicTacToeType
+object HangManType
+
+Games *-down-"2" Game
+Games *-down-"10" ListOfPlayers
+Games *-down- Statistics
+Games *-down- CRUD
+
+Game *-- NumberOfPlayers
+Game *-right- Introduction
+Game *-- Execute
+Game *-up- Resume
+Game *-up- TypeGame
+Game *-- ListOfPlayers:Player
+Game ..> ListOfPlayers:SelectPlayer
+Game *--AssignRoles
+TicTacToe -up-|> Game
+HangMan -up-|> Game
+
+
+TicTacToeType -down-|> TypeGame
+HangManType -down-|> TypeGame
+
+CRUD .right.> ListOfPlayers
+Statistics ..> ListOfPlayers:SelectStatisticsGame
+
+
+@enduml

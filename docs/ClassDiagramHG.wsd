@@ -1,0 +1,104 @@
+@startuml ClassTicTacToe
+
+
+package games {
+
+abstract Game {
+    void selectPlayer()
+    void go()
+    void turn()
+}
+
+interface IPlayerGeneral{}
+
+package hangman {
+
+    class Hangman{
+        int remainingAttemps
+        int guessingAttemps
+        ListPlayers list
+        Board board
+        WordHG word
+        void go()
+    }
+
+    class Board {
+        int guessingAttemps
+        String[6] hangedMan
+        void cleanBoard()
+        void printHangman()
+        void editHangman()
+
+    }
+
+    class WordHG{
+        String originalWord
+        String hiddenWord
+        String guessingLetter
+        int getExistingPosition()
+        void createGuessWord()
+        void placeLetters()
+        boolean checkWin()
+        void printMissingLetters()
+        boolean checkLetter()
+    }
+
+    class Turn{
+        IGiverable wordGiver
+        IGuesserable wordGuesser
+        void turn()
+    }
+
+    interface IHangmanPlayer{}
+
+    interface IGiverable{
+        selectWord()
+    }
+
+    interface IGuesserable{
+        guessWord()
+        tryLetter()
+        askForAHint()
+    }
+
+}
+
+}
+
+package model {
+
+    package players {
+
+        class Player {
+            String name
+        }
+        
+        class ListPlayers{
+            Player[] getPlayers()
+        }
+
+    }
+
+}
+
+Player ..|> IPlayerGeneral
+
+Hangman *--> ListPlayers
+Hangman *--> Board
+Hangman *--> WordHG
+Hangman --> Turn
+
+IPlayerGeneral ..|> IHangmanPlayer
+IHangmanPlayer ..|> IGiverable
+IHangmanPlayer ..|> IGuesserable
+
+Game ..> IPlayerGeneral
+
+Turn *--> IGiverable
+Turn *--> IGuesserable
+
+Hangman -up-|> Game
+
+
+
+@enduml

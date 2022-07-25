@@ -1,0 +1,53 @@
+@startuml vocabularyTicTacToe
+
+object TicTacToe
+object Round
+object Turn
+object Player
+object Goal 
+object Board
+object WinDifWays
+object Put
+Object Coordinate
+Object Square
+object Piece
+object X
+object O
+object Empty
+object TicTacToePlayer
+object SelectPlayers
+object AssignRoles
+
+TicTacToe *--"2" Player
+TicTacToe *--"2" Round
+
+Round *-- Turn
+Round *--"2" TicTacToePlayer
+
+Player ..|> TicTacToePlayer
+TicTacToePlayer o-- Piece
+TicTacToePlayer o-- Goal
+Goal --|> WinDifWays
+Goal ..> Put
+Put ..> Board:target
+Put ..> Coordinate
+Put ..> Piece
+
+Board *--"3x3" Square
+Square *-- Piece  
+
+
+Turn *-- Board
+
+Piece --|> X
+Piece --|> O
+Piece --|> Empty
+
+TicTacToe ..> SelectPlayers
+SelectPlayers ..> Player
+Round ..> AssignRoles
+AssignRoles..> Player
+
+
+
+@enduml
