@@ -1,7 +1,7 @@
 package model.player;
-import statistics.Statistic;
-import statistics.StatisticValue;
-import statistics.TypeGame;
+//import statistics.Statistic;
+//import statistics.StatisticValue;
+//import statistics.TypeGame;
 import utils.Terminal;
 
 

@@ -11,7 +11,9 @@ public class WordHG {
 
     public WordHG(String originalWord) {
         this.originalWord = originalWord;
-        this.lettersGuessed = "";
+        this.lettersGuessed = " ";
+        this.guessingLetter = " ";
+        this.hiddenWord = " ";
     }
     
     public void setGuessingLetter(String guessingLetter) {
@@ -80,11 +82,13 @@ public class WordHG {
         char[] hiddenWordarray = this.hiddenWord.toCharArray();
         int wordLen = secretWordarray.length;
         boolean wordIsGuessed = true;
-        
+        try {
         for (int i = 0; i < wordLen; i++){
             if (secretWordarray[i] != hiddenWordarray[i]) {
                 wordIsGuessed = false;
             }
+        }} catch (Exception e) {
+            
         }
         return wordIsGuessed;
     }
