@@ -18,17 +18,17 @@ public class CrudTest {
         playerList2 = new ArrayList<>();
         controlPlayer = new ControllerPlayer(playerList2);
     }
+    @Test
+    public void testEmptyPlayerFalse(){
+        playerList2.add(new Human("Human1"));
+        boolean emptyList = playerList2.isEmpty();
+        assertEquals(false, emptyList);
+    }
 
     @Test
     public void testEmptyPlayerTrue(){
         boolean emptyList = playerList2.isEmpty();
         assertEquals(true, emptyList);
-    }
-
-    @Test
-    public void testInvalidCapacity(){
-
-        playerList2 = new ArrayList<>(-1);
     }
 
     @Test
