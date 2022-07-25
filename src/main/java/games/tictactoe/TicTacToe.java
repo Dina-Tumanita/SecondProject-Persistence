@@ -32,7 +32,9 @@ public class    TicTacToe extends Game {
     }
 
     public void selectRandomPriority(){
-        this.indexPlayer = dice.turnDice(0, this.players.size() - 1);
+        this.indexPlayer = dice.turnDice(0, this.players.size());
+        System.out.println("ranges: "+0+" "+this.players.size());
+        System.out.println("valor del dado: "+this.indexPlayer);
     }
 
     public void giveCoinsToPlayers(){
