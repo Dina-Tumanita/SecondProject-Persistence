@@ -14,7 +14,7 @@ object SelectStatisticsGame
 object SaveStatistics
 
 ListOfPlayers *-down- Player
-Player *--"0..*" ListResults
+Player *-- "0..*" ListResults
 ListResults *-- Result
 Result *-- TypeGame
 Result *-- Win
