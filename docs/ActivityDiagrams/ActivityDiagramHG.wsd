@@ -1,4 +1,4 @@
-@startuml
+@startuml Activity Diagram Hangman
 start
 
 :select player1;
