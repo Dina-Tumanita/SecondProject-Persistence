@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F59A5582-901D-B0D4-458F-EE14C9DECD08" name="HangmanWord">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:49:19 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Hangman_hgid" id="B956387F-1A69-ECB5-B0C4-089CC515ED30">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:51:30 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="078B51B0-58EF-7F80-C922-7414795E4623" referredColumn="D586C2A5-6F53-F8C3-F1CC-14835105FB1D"/>
+</associations>
+</Column>
+<Column name="secretword" id="39350D7C-022C-B672-5056-710475E626BB">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:51:07 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="guessedletters" id="418300FB-F06C-C503-37BD-13082E413FB9">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:51:07 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>26</dataTypeSize>
+<ownDataTypeParameters>26,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB665FB8-A46D-A346-17B2-F3B25C789FFC" name="HangmanWord_Hangman_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:51:30 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B956387F-1A69-ECB5-B0C4-089CC515ED30"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

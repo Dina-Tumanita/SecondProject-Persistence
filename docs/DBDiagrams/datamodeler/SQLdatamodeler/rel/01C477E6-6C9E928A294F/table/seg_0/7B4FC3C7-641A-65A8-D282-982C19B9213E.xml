@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B4FC3C7-641A-65A8-D282-982C19B9213E" name="HangmanBoard">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:44:00 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Hangman_hgid" id="B83F98BC-4C8A-1CB6-39F7-AEC3AAFE28B2">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:44:56 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D7DCD9E-7367-3288-D47D-56D25928B946" referredColumn="D586C2A5-6F53-F8C3-F1CC-14835105FB1D"/>
+</associations>
+</Column>
+<Column name="TurnHG_idturnhg" id="3BA2BD9D-8ED1-A611-132A-24E97F7BDE21">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:45:01 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9AC9B6FE-BF75-483E-5FEE-C2CCB34C6311" referredColumn="FC68A627-8798-27C7-96FD-EFF025D86E32"/>
+</associations>
+</Column>
+<Column name="guessingletter" id="0CFA6022-E000-B989-CA99-CED94774988B">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:44:50 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hint" id="8BD016E1-10BD-B7C6-CA7C-FA425D9D6739">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:44:50 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="remainingAttempts" id="E64E4A78-023F-AC9F-3F0F-CCED0ABEC23C">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:44:50 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8F3E31D-D895-3A7C-E0EF-F0E376467CEF" name="HangmanBoard_Hangman_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:44:56 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B83F98BC-4C8A-1CB6-39F7-AEC3AAFE28B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5A8509A-ECE9-9C41-666D-230C5E009100" name="HangmanBoard_TurnHG_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:45:01 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BA2BD9D-8ED1-A611-132A-24E97F7BDE21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

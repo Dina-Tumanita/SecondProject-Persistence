@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="900EBF0C-5774-A0FC-7298-05D6AB3F8CBB" containerWithKeyObject="CFEA1457-F2EE-755E-0ECB-98C9FCDFEF63" localFKIndex="FB9AF60D-D46E-BB25-EF3B-160C281C46C0" name="TicTacToeBoard_TurnTTT_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:15:46 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<referredTableLongName>TurnTTT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>04B2EDDD-2BE1-614C-6768-2AF92F12E2B5</referredTableID>
+<keyObject>917F6FD1-C3E0-8D9B-C668-91AC22318E1A</keyObject>
+<referredKeyID>917F6FD1-C3E0-8D9B-C668-91AC22318E1A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idturnttt</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

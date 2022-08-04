@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="078B51B0-58EF-7F80-C922-7414795E4623" containerWithKeyObject="F59A5582-901D-B0D4-458F-EE14C9DECD08" localFKIndex="EB665FB8-A46D-A346-17B2-F3B25C789FFC" name="HangmanWord_Hangman_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:51:30 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<referredTableLongName>Hangman</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DDB3C802-ED0E-71A0-0AF8-BA1086D3FFB7</referredTableID>
+<keyObject>4D032FD1-2FC1-1BBD-0A95-0B27B289381E</keyObject>
+<referredKeyID>4D032FD1-2FC1-1BBD-0A95-0B27B289381E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>hgid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

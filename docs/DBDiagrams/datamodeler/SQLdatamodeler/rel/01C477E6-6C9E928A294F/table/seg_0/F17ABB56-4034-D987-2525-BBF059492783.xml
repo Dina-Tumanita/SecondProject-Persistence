@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F17ABB56-4034-D987-2525-BBF059492783" name="TicTacToe">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:04:51 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tttid" id="0713DCB3-D770-304A-D384-B55F49FDCDE3">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:06:49 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Game_gameid" id="F8826253-FE94-ECA1-574C-F4E87D32346C">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:07:00 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1BE0EADB-0DD5-01FA-7154-6403C7519F35" referredColumn="37B45745-A67A-7581-C17E-5F09BAE97862"/>
+</associations>
+</Column>
+<Column name="playerXid" id="5D936D2E-F31B-A37B-11FD-73C0931C0424">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:07:14 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AABE5756-842B-FB40-393C-6BF27A3FEB58" referredColumn="56999A1C-C5F6-4A14-D8FA-C47FC48BE1A4"/>
+</associations>
+</Column>
+<Column name="playerOid" id="4E7ED72D-6D77-292B-7CD5-6E9F1968F007">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:07:39 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32660F14-7FDA-CFB0-9DCF-7C92E866442B" referredColumn="56999A1C-C5F6-4A14-D8FA-C47FC48BE1A4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="306A71A7-F20E-B0FA-E94D-940DEF328CA6" name="TicTacToe_PK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:06:49 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0713DCB3-D770-304A-D384-B55F49FDCDE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93C88557-1D54-2C9A-8698-59CB2C6DC02F" name="TicTacToe_Game_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:06:59 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8826253-FE94-ECA1-574C-F4E87D32346C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="480387EA-D73A-AD27-138C-601B41E95CA9" name="TicTacToe_PlayerX_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:07:14 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D936D2E-F31B-A37B-11FD-73C0931C0424"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A95933D-01C4-098E-D392-A0F422923252" name="TicTacToe_PlayerO_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:07:39 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E7ED72D-6D77-292B-7CD5-6E9F1968F007"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
