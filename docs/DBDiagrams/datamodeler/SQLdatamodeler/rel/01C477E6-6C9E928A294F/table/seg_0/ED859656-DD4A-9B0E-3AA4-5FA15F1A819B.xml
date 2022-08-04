@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED859656-DD4A-9B0E-3AA4-5FA15F1A819B" name="GameStats">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:32:38 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Game_gameid" id="C3BCE399-513A-21A4-D90C-3D1C0CAD7FAB">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:40:05 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF55EC1C-D3C1-79EC-E309-C21862D28766" referredColumn="37B45745-A67A-7581-C17E-5F09BAE97862"/>
+</associations>
+</Column>
+<Column name="played" id="C9BDC4B9-4848-F498-1919-B2DC2E1B8DC1">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:33:24 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA26D813-019D-C452-D015-E6EB07A21A1E" name="GameStats_Game_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:40:05 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3BCE399-513A-21A4-D90C-3D1C0CAD7FAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

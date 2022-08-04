@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB57E0A0-2245-93DD-8B3B-BC1A249C64E2" name="Game">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:19:38 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="gameid" id="37B45745-A67A-7581-C17E-5F09BAE97862">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:20:20 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="5F15D596-26FD-910E-7E4F-AFD14D00206C">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:20:20 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numplayers" id="51E52541-A722-B600-3AAE-3EBF85D802E4">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:20:20 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="round" id="3A7F02CF-C906-7708-7557-03BAA6D0EAA3">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:33:38 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5217898-84EF-9121-5B0A-7C3468EFCD8E" name="Game_PK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:20:20 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37B45745-A67A-7581-C17E-5F09BAE97862"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
