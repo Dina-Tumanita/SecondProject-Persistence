@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-05T01:50:57.395Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="_R-LuRfQ-as3zdeePUo5" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-05T01:51:43.365Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="1AMhmF6GCEIYjER3iXAQ" version="20.2.3" type="github">
   <diagram id="GSAE8gvjRrJy3DkUfwJ-" name="Page-1">
     <mxGraphModel dx="482" dy="1419" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -46,7 +46,7 @@
         <mxCell id="ABzSxW5pIGSk9XHSio9y-18" value="GAMESTATS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="120" y="160" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ABzSxW5pIGSk9XHSio9y-19" value="PLAYERS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="ABzSxW5pIGSk9XHSio9y-19" value="PLAYER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="520" y="280" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ABzSxW5pIGSk9XHSio9y-20" value="PLAYERSTATS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
