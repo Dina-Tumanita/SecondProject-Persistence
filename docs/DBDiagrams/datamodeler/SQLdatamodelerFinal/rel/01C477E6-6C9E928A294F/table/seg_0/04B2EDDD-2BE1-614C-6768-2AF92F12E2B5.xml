@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="04B2EDDD-2BE1-614C-6768-2AF92F12E2B5" name="TurnTTT">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:10:28 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idturnttt" id="433C6F11-22DB-D1F9-10B0-333C1060433C">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:11:11 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TicTacToe_tttid" id="A52F2D6E-5F4A-517D-B42D-D4BF5106540D">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:11:22 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="514ACD5B-E445-6D08-642E-A8F0B047B217" referredColumn="0713DCB3-D770-304A-D384-B55F49FDCDE3"/>
+</associations>
+</Column>
+<Column name="finished" id="4A493FB9-8EBA-0B38-9E2F-22BC9181A603">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:11:11 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="winner" id="73D747E1-E988-27C0-0946-947CB2AF6A3F">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:11:11 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="917F6FD1-C3E0-8D9B-C668-91AC22318E1A" name="TurnTTT_PK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:11:11 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="433C6F11-22DB-D1F9-10B0-333C1060433C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0F6E467-E388-BFF4-5409-9E035F602B2A" name="TurnTTT_TicTacToe_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:11:22 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A52F2D6E-5F4A-517D-B42D-D4BF5106540D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

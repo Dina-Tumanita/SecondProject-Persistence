@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SQLdatamodelerFinal" id="283E02CD-4091-1E1B-BA59-09D81633485A" version="3.5">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:11:34 UTC</createdTime>
+<ownerDesignName>SQLdatamodeler</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>283E02CD-4091-1E1B-BA59-09D81633485A</designId>
+</OSDM_Design>

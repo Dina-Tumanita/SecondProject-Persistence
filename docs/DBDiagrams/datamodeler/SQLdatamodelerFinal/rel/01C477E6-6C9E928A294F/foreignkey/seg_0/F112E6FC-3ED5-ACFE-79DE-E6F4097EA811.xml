@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F112E6FC-3ED5-ACFE-79DE-E6F4097EA811" containerWithKeyObject="DDB3C802-ED0E-71A0-0AF8-BA1086D3FFB7" localFKIndex="8114B7C9-25C1-FF10-699F-A9372A967655" name="Hangman_PlayerGiver_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:22:11 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<referredTableLongName>Players</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8B193C1B-8146-79EC-D886-BDA4B48D77F4</referredTableID>
+<keyObject>2DFC25FF-5203-0393-8315-AF54D62C622A</keyObject>
+<referredKeyID>2DFC25FF-5203-0393-8315-AF54D62C622A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>playerid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

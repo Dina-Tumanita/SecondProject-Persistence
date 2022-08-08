@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9B4BA44D-DEE8-35CB-9CB1-01286FBA0E1C" containerWithKeyObject="CFEA1457-F2EE-755E-0ECB-98C9FCDFEF63" localFKIndex="FF11FD59-36C2-6559-2FE1-E0C74DC243D7" name="TicTacToeBoard_TicTacToe_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:15:37 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<referredTableLongName>TicTacToe</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F17ABB56-4034-D987-2525-BBF059492783</referredTableID>
+<keyObject>306A71A7-F20E-B0FA-E94D-940DEF328CA6</keyObject>
+<referredKeyID>306A71A7-F20E-B0FA-E94D-940DEF328CA6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>tttid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

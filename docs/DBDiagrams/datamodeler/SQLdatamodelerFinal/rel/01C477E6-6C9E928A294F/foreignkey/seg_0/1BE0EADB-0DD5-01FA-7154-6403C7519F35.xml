@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1BE0EADB-0DD5-01FA-7154-6403C7519F35" containerWithKeyObject="F17ABB56-4034-D987-2525-BBF059492783" localFKIndex="93C88557-1D54-2C9A-8698-59CB2C6DC02F" name="TicTacToe_Game_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:06:59 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<referredTableLongName>Game</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BB57E0A0-2245-93DD-8B3B-BC1A249C64E2</referredTableID>
+<keyObject>C5217898-84EF-9121-5B0A-7C3468EFCD8E</keyObject>
+<referredKeyID>C5217898-84EF-9121-5B0A-7C3468EFCD8E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>gameid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

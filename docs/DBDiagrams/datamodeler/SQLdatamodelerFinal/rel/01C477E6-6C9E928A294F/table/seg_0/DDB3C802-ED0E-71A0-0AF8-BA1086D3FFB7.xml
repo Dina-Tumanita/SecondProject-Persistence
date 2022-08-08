@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DDB3C802-ED0E-71A0-0AF8-BA1086D3FFB7" name="Hangman">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:20:19 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hgid" id="D586C2A5-6F53-F8C3-F1CC-14835105FB1D">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:20:48 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Game_gameid" id="3786FC8E-4257-B492-859B-E8266D6FF80B">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:21:55 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC7A3F0D-65BC-87E4-63AC-4352FC7ACAFB" referredColumn="37B45745-A67A-7581-C17E-5F09BAE97862"/>
+</associations>
+</Column>
+<Column name="giverid" id="AFC4EAC7-9C4F-EECE-4274-DDD83EFB29AF">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:22:11 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F112E6FC-3ED5-ACFE-79DE-E6F4097EA811" referredColumn="56999A1C-C5F6-4A14-D8FA-C47FC48BE1A4"/>
+</associations>
+</Column>
+<Column name="guesserid" id="E99D92E7-9BC8-8CB6-A242-2D59E3DAB205">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:22:27 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CE6B04F-541E-AD5F-FF13-950F46ED5524" referredColumn="56999A1C-C5F6-4A14-D8FA-C47FC48BE1A4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D032FD1-2FC1-1BBD-0A95-0B27B289381E" name="Hangman_PK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:20:48 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D586C2A5-6F53-F8C3-F1CC-14835105FB1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3D964F3-FE4A-B3CF-EC59-C4EB99CA6BD4" name="Hangman_Game_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:21:55 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3786FC8E-4257-B492-859B-E8266D6FF80B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8114B7C9-25C1-FF10-699F-A9372A967655" name="Hangman_PlayerGiver_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:22:11 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFC4EAC7-9C4F-EECE-4274-DDD83EFB29AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A7288C0-BEA4-1C77-2233-681E2B040BF9" name="Hangman_PlayerGuesser_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 20:22:27 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E99D92E7-9BC8-8CB6-A242-2D59E3DAB205"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31FB0FFF-1761-82D4-A808-1C40380040E3" name="PlayerStats">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:54:33 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Players_playerid" id="663C4D9F-99AA-8289-4B2C-75FFB7AA9C95">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:55:33 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78488B65-09B2-4B6C-F442-F5FBB57E1CF6" referredColumn="56999A1C-C5F6-4A14-D8FA-C47FC48BE1A4"/>
+</associations>
+</Column>
+<Column name="win" id="C2E43D78-191F-C4A5-6C33-EAB11EF3304C">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:55:22 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="loss" id="64B42CDE-000C-EC01-3165-C4834B337DC8">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:55:22 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tie" id="C531F0D8-E1A5-30F1-BE05-CF7782655B3C">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:55:22 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D82EB066-DDAA-D3B9-D9C5-A497CFE4F99A" name="PlayerStats_PK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-08 17:16:22 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="663C4D9F-99AA-8289-4B2C-75FFB7AA9C95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB29AA63-E16E-640E-0668-E9FDE7636448" name="PlayerStats_Players_FK">
+<createdBy>dina.rodriguez</createdBy>
+<createdTime>2022-08-04 19:55:33 UTC</createdTime>
+<ownerDesignName>SQLdatamodelerFinal</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="663C4D9F-99AA-8289-4B2C-75FFB7AA9C95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
